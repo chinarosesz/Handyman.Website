@@ -6,7 +6,6 @@ module.exports = {
   entry: glob.sync("./src/**/*.tsx"),
   output: {
     filename: "bundle.js",
-    publicPath: "/dist/"
   },
   devtool: "inline-source-map",
   devServer: {
@@ -15,9 +14,6 @@ module.exports = {
   },
   resolve: {
     extensions: [".ts", ".tsx", ".js"]
-  },
-  stats: {
-    warnings: false
   },
   module: {
     rules: [
