@@ -1,8 +1,8 @@
 import * as React from "react";
 import * as ReactDOM from "react-dom";
 
-let a = 1;
-if (a == 1) 
+const a = 1;
+if (a === 1) 
 {
     console.log("a");
 }
