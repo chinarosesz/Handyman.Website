@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "localdev": "webpack --mode development && webpack-dev-server --mode development"
+    "init": "npm install --global webpack && npm install --global webpack-dev-server && npm install --global eslint",
+    "localbuild": "npm install && eslint src/**/*.tsx && webpack --mode development && webpack-dev-server --mode development"
   },
   "author": "",
   "license": "ISC",
@@ -15,10 +16,13 @@
     "react-dom": "^16.13.1"
   },
   "devDependencies": {
-    "webpack-cli": "^3.3.11",
+    "@typescript-eslint/eslint-plugin": "^2.27.0",
+    "@typescript-eslint/parser": "^2.27.0",
+    "eslint": "^6.8.0",
     "ts-loader": "^6.2.2",
     "typescript": "^3.8.3",
     "webpack": "^4.42.1",
+    "webpack-cli": "^3.3.11",
     "webpack-dev-server": "^3.10.3"
   }
 }
