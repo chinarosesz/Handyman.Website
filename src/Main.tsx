@@ -1,13 +1,15 @@
 import * as React from "react";
 import * as ReactDOM from "react-dom";
-import { ClockCoponent } from "./ClockComponent";
+import * as ClockComponent from "./clock-component";
+import * as SigninComponent from "./signin-component";
 
-let clockComponent = <ClockCoponent />
+let clockComponent = <ClockComponent.ClockComponent />
+let signinComponent = <SigninComponent.SigninComponent />
 
 ReactDOM.render(
     <div>
         <h1>Hello World</h1>
         <div>{clockComponent}</div>
+        <div>{signinComponent}</div>
     </div>,
-    document.getElementById("root")
-);
+    document.getElementById("root"));

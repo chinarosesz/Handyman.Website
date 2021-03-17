@@ -1,6 +1,6 @@
 import * as React from "react";
 
-export class ClockCoponent extends React.Component 
+export class ClockComponent extends React.Component 
 {
   render() 
   {

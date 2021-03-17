@@ -1,7 +1,7 @@
 {
-  "name": "handyman.website",
+  "name": "sample-react-typescript-website",
   "version": "1.0.0",
-  "description": "",
+  "description": "This is an example website that uses react and typescript",
   "scripts": {
     "restore": "npm install && npm install --global webpack && npm install --global webpack-dev-server",
     "build-debug": "webpack --mode development && webpack-dev-server --mode development"
